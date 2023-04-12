@@ -17,9 +17,9 @@ main(){
   print('obj3 == obj4 : ${obj3==obj4}'); //obj3 == obj4 : false
   // 상수 생성자를 선언한 클래스더라도 일반 객체로 선언하면 서로 다른 객체가 생성.
 
-  var obj5 = MyClass1(20);
-  var obj6 = MyClass1(20);
-  print('obj5 == obj6 : ${obj5==obj6}'); //obj5 == obj6 : false
+  var obj5 = const MyClass1(20);
+  var obj6 = const MyClass1(20);
+  print('obj5 == obj6 : ${obj5==obj6}'); //obj5 == obj6 : true
   // const를 붙여 상수 객체로 선언하면서 생성자에 전달한 값(초깃값)이 똑같으면 객체를 다시 생성하지 않고 이전 값으로 생성한 객체를 그대로 사용.
   // 즉, 상수 객체는 값이 똑같은 객체를 재사용.
 
