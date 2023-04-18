@@ -63,7 +63,10 @@ flutter:
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
-
+  assets:
+    - images/ # 하위 디렉터리는 포함하지 않으므로 아래의 코드로 별도로 등록해야함.
+    - images/icon/
+    - assets/text/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
